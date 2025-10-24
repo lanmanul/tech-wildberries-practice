@@ -12,17 +12,17 @@ package main
 Решение: Нужно скопировать нужный кусок строки в новую строку,
 чтобы оригинальный буфер можно было освободить
 */
-var justString string
-
-func someFunc() {
-	v := createHugeString(1 << 10)
-	// Создаём копию первых 100 символов
-	justString = v[:100]
-}
-
-func main() {
-	someFunc()
-}
+//var justString string
+//
+//func someFunc() {
+//	v := createHugeString(1 << 10)
+//	// Создаём копию первых 100 символов
+//	justString = v[:100]
+//}
+//
+//func main() {
+//	someFunc()
+//}
 
 /*
 []rune(v[:100]) преобразует строку в срез рун (символов Unicode)
